@@ -1,0 +1,177 @@
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+/* CODE */
+
+*{
+    font-family: Roboto;
+}
+
+.back_link img ,  .forward_link img{
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+}
+
+.holder_img img{
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+
+
+.holder_img{
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(109.6deg, rgb(87, 33, 159) 11.2%, rgb(150, 199, 253) 100.2%);
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.holder_content{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.image{
+    border-radius: 40px;
+}
+
+.holder_btns{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.holder_link{
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(149, 148, 148);
+    border-radius: 50%;
+    transition: all 0.8s ease;
+}
+
+.hidden{
+    display: none;
+}
+
+.active{
+    background-color: white;
+}
+
+@media (max-width: 400px) {
+    .back_link img ,  .forward_link img{
+        height: 45px;
+        width: 45px;
+    }
+    
+    .holder_img img{
+        width: 280px;
+        height: 150px;
+    
+    }
+}
